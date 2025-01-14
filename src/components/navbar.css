@@ -1,0 +1,60 @@
+/* navbar.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: #354b5e;
+    padding: 15px 20px;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid #2b3a48;
+}
+
+.navbar-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-item {
+    margin: 0 20px;
+}
+
+.navbar-item a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #f0f4f8;
+    font-size: 20px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.navbar-item a:hover,
+.navbar-item.active a {
+    color: #8fc3e5;
+    transform: scale(1.1);
+}
+
+@media (max-width: 830px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .navbar-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-item {
+        margin: 10px 0;
+    }
+}
