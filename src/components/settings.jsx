@@ -90,24 +90,6 @@ const Settings = () => {
         <option value="30px">Large</option>
         <option value="50px">Extra Large</option>
       </select>
-
-      <p>Current Animation Speed: {animationSpeed}</p>
-      <label htmlFor="animation-speed">Select Animation Speed:</label>
-      <select
-        id="animation-speed"
-        value={animationSpeed}
-        onChange={handleAnimationSpeedChange}
-      >
-        <option value="4s">Fast</option>
-        <option value="5s">Normal</option>
-        <option value="7s">Slow</option>
-        <option value="9s">Very Slow</option>
-      </select>
-
-      {/* Animation of a walking figure */}
-      <div className="walking-figure-container">
-        <div className="walking-figure" style={{ animationDuration: animationSpeed}}></div>
-      </div>
     </div>
   );
 };
